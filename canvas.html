@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#ca{
+				border: 1px solid red;
+			}
+		</style>
+	</head>
+	<body>
+		<canvas id="ca" height="600px" width="600px"></canvas>
+	</body>
+	<script type="text/javascript">
+		var can=document.getElementById('ca');
+		var ctx=can.getContext('2d');
+		ctx.beginPath();
+		ctx.moveTo(200, 200);
+		ctx.arc(200,200,100,0*Math.PI,0.5*Math.PI);
+		ctx.closePath();
+		ctx.fillStyle='red';
+		ctx.fill();
+	</script>
+</html>
